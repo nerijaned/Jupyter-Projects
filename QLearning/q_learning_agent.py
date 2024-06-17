@@ -1,3 +1,4 @@
+#Q learning assignment submitted by Nerizza Jane de Jesus
 import numpy as np
 import random
 from environment import Env
@@ -7,9 +8,9 @@ class QLearningAgent:
     def __init__(self, actions):
         # actions = [0, 1, 2, 3]
         self.actions = actions
-        self.learning_rate = 0.01
-        self.discount_factor = 0.9
-        self.epsilon = 0.1
+        self.learning_rate = 0.1
+        self.discount_factor = 0.95
+        self.epsilon = 0.03
         self.q_table = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])
 
     # update q function with sample <s, a, r, s'>

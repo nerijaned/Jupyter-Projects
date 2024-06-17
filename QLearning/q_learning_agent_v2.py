@@ -67,6 +67,8 @@ for lr in learning_rates:
             if avg_reward > best_reward:
                 best_reward = avg_reward
                 best_hyperparameters = (lr, df, eps)
+                print("Best hyperparameters:", best_hyperparameters)
+                print("Best average reward:", best_reward)
 
 print("Best hyperparameters:", best_hyperparameters)
 print("Best average reward:", best_reward)
